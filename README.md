@@ -1,6 +1,12 @@
-# Tamaring Prover model for the paper Onion CoAP: Enabling Onion Routing for the IoT
+# Tamaring Prover model for the paper *Onion CoAP: Enabling Onion Routing for the IoT*
 
-The two files above contains the Tamarin Prover model for the Onion CoAP protocol single-circuit version, and the Tamarin proofs that the specified properties are valid.
+Model Author: Simon Bouget
+
+Paper Authors: Rikard Höglund, Marco Tiloca, Christian Amsüss, Simon Bouget, Shahid Raza
+
+## Model information
+
+The two files in this repository contain the Tamarin Prover model for the Onion CoAP protocol single-circuit version, and the Tamarin proofs that the specified properties are valid.
 
 Both files contain the same model, but the proofs for different lemmas. We split the proofs over two different .spthy files due to their large size (over 30,000 lines in total), and correspondingly large memory footprint to verify.
 
@@ -22,8 +28,5 @@ This file contains the proof traces for all other lemmas relevant to the paper b
  - weak_no_linkage, which shows that Proxies cannot learn both end-points of a circuit. The "weak" in the lemma's name refers to the formulation of the property, which is easier to prove under this form, but is equivalent to the natural language phrasing, as we explain in the paper section 11.2.  
  - Verification:
    * time: ~5 min (2021 Lenovo laptop)
-   * memory: ~10 GB
+   * memory: ~10 GB  
 
-Model Author: Simon Bouget
-
-Paper Authors: Rikard Höglund, Marco Tiloca, Christian Amsüss, Simon Bouget, Shahid Raza
